@@ -1,0 +1,23 @@
+{
+    "name": "DARKRELAY",
+    "version": "3.6",
+    "description": "jembut",
+    "main": "DarkRelay.js",
+    "scripts": {
+        "start": "node DarkRelay"
+    },
+    "dependencies": {
+        "@octokit/rest": "latest",
+        "@whiskeysockets/baileys": "github:animationarmufa-oss/Baileys",
+        "axios": "^1.6.0",
+        "body-parser": "^1.20.3",
+        "chalk": "^4.1.2",
+        "js-confuser": "latest",
+        "crypto": "latest",
+        "fs": "latest",
+        "moment-timezone": "latest",
+        "pino": "^9.5.0",
+        "readline-sync": "^1.4.10",
+        "telegraf": "^4.16.3"
+    }
+}
