@@ -1,0 +1,22 @@
+{
+    "name": "D A R K R E L A Y U P D A T E",
+    "version": "2.0",
+    "main": "DarkRelay",
+    "scripts": {
+        "start": "node DarkRelay.js"
+    },
+    "dependencies": {
+        "@whiskeysockets/baileys": "github:animationarmufa-oss/Baileys",
+        "axios": "^1.5.0",
+        "fs": "latest",
+        "chalk": "^4.1.2",
+        "moment": "^2.29.1",
+        "crypto": "latest",
+        "@octokit/rest": "latest",
+        "moment-timezone": "latest",
+        "pino": "^9.5.0",
+        "readline-sync": "^1.4.10",
+        "telegraf": "^4.16.3",
+        "form-data": "^4.0.0"
+    }
+}
