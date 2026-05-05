@@ -1260,7 +1260,9 @@ async function checkGithubUpdate(bot) {
 ⚡ Ketik /update untuk update terbaru
       `;
 
-      for (let owner of ownerID) {
+      // Perbaikan: ownerID bisa string atau array
+      const owners = Array.isArray(ownerID) ? ownerID : [ownerID];
+      for (const owner of owners) {
         await bot.telegram.sendMessage(owner, message);
       }
 
