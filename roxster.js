@@ -579,7 +579,13 @@ const store = makeInMemoryStore({
     });
 };
 
+
 startSesi();
+setInterval(() => {
+  checkGithubUpdate(bot);
+}, 60000); // 1 menit
+// WhatsApp Connection
+const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) });
 
 const checkWhatsAppConnection = (ctx, next) => {
     if (!isWhatsAppConnected) {
